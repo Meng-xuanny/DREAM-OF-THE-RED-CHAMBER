@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../style.css">  
+    <link rel="shortcut icon" type="image/png" href="../images/favicon-32x32.png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        form {
+            width: 70%;
+            color:inherit ;
+        }
+        .form-input,select,textarea {
+            width: 100%;
+            font-size: 1rem;
+            border-radius: 10px;
+            padding: 1rem 2.5rem;
+        }
+       
+        table {
+            max-width: 40%;
+            border-spacing: 2.5rem;
+            color: #f4f2f2;
+        }
+        table,th,td {border: none;}
+        td {border-bottom: 2px solid #ffedd5;
+            vertical-align: bottom;}
+        th {background-color: transparent; font-size: 1.7rem;}
+        
+        .main_img_container {
+            position: relative; 
+            height: 100vh;
+            width: fit-content;
+            margin: 5.5rem 2rem;
+            display: flex;
+            align-items: center;
+        }
+        .main_img_container::before {
+            content: "";
+            background-image: url(../images/granny-liu-garden.webp);
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.45;
+        }
+        .contact-form__container {
+            display: flex;
+            justify-content: center;
+            width: 68%;
+            z-index: 99;
+            font-size: 1.5rem;
+            font-family: 'Cabin', Sans-Serif;
+            font-weight: 300;
+            line-height: 1.8;
+            letter-spacing: 1.2px;
+            margin-top: 2.5rem;
+        }
+        
+        .contact-icon:link,.contact-icon:visited {color:#f4f2f2 ;}
+        .contact-icon:hover {color: #60a5fa;}
+        
+    </style>
+</head>
+<body>
+    <header class="heading-sub">
+        <h2>We'd love to hear from you</h2><br>
+        <hr style="border: 1.4px solid #c2410c;">
+    </header>
+    <div class="main-container">
+        <main>
+            <div class="main_img_container">
+                <div class="contact-form__container">
+                    <form>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." class="form-input">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." class="form-input">
+
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+
+                        <label for="advice">Let us know if you have any enquery or advice!</label><br>
+                        <textarea name="advice" placeholder="Tell us what you think..."></textarea>
+                        <input class="btn submit-btn" type="submit" value="submit">
+                    </form>
+                </div>
+            </div>
+            <div class="contact-container">
+                <table>
+                    <tr><th colspan="2">You can also reach us via: </th></tr>
+                    <tr>
+                        <td>Email</td>
+                        <td> 
+                            <a class="contact-icon" href="mailto:u3228312@uni.canberra.edu.au"><ion-icon name="mail-outline" class="icon"></ion-icon></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Facebook</td>
+                        <td> 
+                            <a class="contact-icon" href="https://www.facebook.com"><ion-icon name="logo-facebook" class="icon"></ion-icon></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td> 
+                            <a class="contact-icon" href="https://www.instagram.com"><ion-icon name="logo-instagram" class="icon"></ion-icon></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Twitter</td>
+                        <td> 
+                            <a class="contact-icon" href="https://www.x.com"><ion-icon name="logo-twitter" class="icon"></ion-icon></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="btn-container">
+                <a href="Main.html" class="btn" id="btn-home">Back to home</a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="icon-container">
+                <a class="icon-link" href="https://www.facebook.com"><ion-icon name="logo-facebook" class="icon"></ion-icon></a>
+                <a class="icon-link" href="https://www.instagram.com"><ion-icon name="logo-instagram" class="icon"></ion-icon></a>
+                <a class="icon-link" href="https://www.x.com"><ion-icon name="logo-twitter" class="icon"></ion-icon></a>
+                <a class="icon-link" href="mailto:u3228312@uni.canberra.edu.au"><ion-icon name="mail-outline" class="icon"></ion-icon></a>
+            </div>
+            <hr>
+            <p>&copy; 2024 by u3228312. 
+                For educational purpose only.All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
